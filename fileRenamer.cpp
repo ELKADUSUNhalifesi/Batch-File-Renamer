@@ -15,12 +15,20 @@ int main()
     cin >> fileType;
     
     fileType = "." + fileType;
+    
+    do {
+        cout << "Enter Starting File Name Index Number: ";
+        cin >> startIndex;
 
-    cout << "Enter Starting File Name Index Number: ";
-    cin >> startIndex;
-
-    cout << "Enter Ending File Name Index Number: ";
-    cin >> endIndex;
+        cout << "Enter Ending File Name Index Number: ";
+        cin >> endIndex;
+        
+        if (endIndex - startIndex + 1 > 999) {
+            cout << "Number of files you wish to rename exceeds Maximum allowable file batch size which is maximum 999 file per proccess!" << endl;
+        }
+    }
+    while (endIndex - startIndex + 1 > 999);
+        
 
     cout << "Enter How Much you want to increase each file name as a number: ";
     cin >> increase;
