@@ -12,4 +12,5 @@ and in that folder open terminal and run command:
 ./fileRenamer
 ```
 
-Note Maximum Allowable Batch Size is 999 for more you should re-run it!
+Note Maximum Allowable Batch Size is 999
+for rename more than 999 files you should re-run it!
